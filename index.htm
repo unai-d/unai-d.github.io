@@ -38,7 +38,7 @@
 
 				font-family: sans-serif;
 				font-size: 18px;
-				line-height: 1.5;
+				line-height: 1.25;
 			}
 
 			main
@@ -54,37 +54,57 @@
 				text-align: center;
 			}
 
-			footer ul
+			ul.dotnav
 			{
 				display: flex;
 				flex-wrap: wrap;
-				justify-content: center;
 				list-style: none;
 				padding: 0;
 				width: 100%;
-			}
 
-			footer ul li:not(:first-of-type)::before
-			{
-				content: '•';
-				margin: 0 1rem;
+				li:not(:first-of-type)::before
+				{
+					content: '•';
+					margin: 0 1rem;
+				}
 			}
 		</style>
 	</head>
 	<body>
 		<main>
-			<h1>👋&nbsp;Howdy!</h1>
+			<h1>👋&nbsp;Hi!</h1>
 			<p>
-				Welcome to my website. As you can see, there's not much to see here. You can bookmark this page so you can come back to check for updates.
+				Welcome to my website!
+				I'm Unai Domínguez, a hobbyist programmer, now studying animation.
 			</p>
+			<p>
+				As you can see, there's not much to see here.
+				You can bookmark this page so you can come back to check for updates.
+			</p>
+
+			<h2>📫️ Contact</h2>
+			<p>You can find me on</p>
+			<ul class="dotnav">
+				<li><a href="https://github.com/unai-d">GitHub</a></li>
+				<li><a href="https://www.youtube.com/channel/UCVmFIsDmUMJIBaNOHSFlpyg/">YouTube</a></li>
+				<li><a href="https://www.reddit.com/user/unai-d/">Reddit</a></li>
+				<li><a href="https://archive.org/details/@unai_dom_nguez">Internet Archive</a></li>
+			</ul>
+
+			<h2>📁 Projects</h2>
+			<p>Some of my (publicly available) projects are as follows:</p>
+			
+			<h3><a href="https://github.com/unai-d/extended-binary-waterfall">Extended Binary Waterfall (EBW)</a></h3>
+			<p>A program that reads files as raw video and audio streams of data <b>and</b> gives a file listing alongside it. Believe it or not, this is the most starred GitHub project I have at the time of writing this…</p>
+
+			<h3><a href="https://github.com/unai-d/console-3d-renderer">Console 3D Renderer</a></h3>
+			<p>As the name suggests, it is a Java program that renders a spinning 3D cube to the console/terminal window using a combination of Unicode blocks and ANSI escape codes.</p>
+
+			<h3><a href="https://github.com/unai-d/Unai.VITC">Unai.VITC / vitcgen</a></h3>
+			<p>A program that generates a vertical interval timecode (VITC), a special signal used in analog video to keep track of time accurately.</p>
 		</main>
 		<footer>
 			<p>Made by Unai Domínguez</p>
-			<ul>
-				<li>Find me on</li>
-				<li><a href="https://github.com/unai-d">GitHub</a></li>
-				<li><a href="https://archive.org/details/@unai_dom_nguez">Internet Archive</a></li>
-			</ul>
 		</footer>
 	</body>
 </html>
